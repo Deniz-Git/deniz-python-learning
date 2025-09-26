@@ -40,9 +40,9 @@ Things that I've struggled with:
   
   1. append() and extend()
 
-They are same same  different. Which forced me to get my feet wet with iterators and iterables.
+They are same same but different. Which forced me to get my feet wet with iterators and iterables.
 
-  2. And also game logic, I was just building the game with If statements. Luckly I quickly realized that if something repeats itself I should probably create a function for it.
+  2. And also game logic, I was just building the game with If statements. Luckly I quickly realized if something repeats itself I should probably create a function for it.
 
   3. When i first started the blackjack project, I was super excited about dictionaries. So i was putting every function in a dictionary. FOR. NO. GOOD. REASON. :'( What a waste of time...
 
@@ -62,7 +62,7 @@ Things that I've learned during the project:
          type()
   7. flowcharts are good, having a whiteboard makes you not only look smarter but also smarter. USE IT!
 
-Apart from the course, I didn't really mess around with Arch btw. I've watched some more videos, read articles and surfed through the wiki. 
+Apart from the course, I didn't really mess around with Arch btw, by the way. I've watched some more videos, read articles and surfed through the wiki. 
 
 My Beelink Mini Me has arrived, for now just waiting for my SSDs.
 
