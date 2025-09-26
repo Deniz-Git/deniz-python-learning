@@ -30,3 +30,42 @@ Yesterday I didn't really do any meaningful python study. But I watched a video 
 Even though I'm kinda on and off with the python course these past 2 days, It is quite nice to find out that my interest is not diminishing. I've made the mistake of just burning myself plenty in previous interests. It is okay to take it slow and steady. Build other skills that will soon be necessary as I am progressing in this endeavour.
 
 See you next time!
+
+
+26-09-2025:
+
+Yesterday I've "completed" day 11 of the Angela Yu's Python course. It was my first capstone project. 'I' have made a blackjack game. 
+
+Things that I've struggled with:
+  
+  1. append() and extend()
+
+They are same same  different. Which forced me to get my feet wet with iterators and iterables.
+
+  2. And also game logic, I was just building the game with If statements. Luckly I quickly realized that if something repeats itself I should probably create a function for it.
+
+  3. When i first started the blackjack project, I was super excited about dictionaries. So i was putting every function in a dictionary. FOR. NO. GOOD. REASON. :'( What a waste of time...
+
+  4. My understanding of return statements were flawed. Let's just leave it at that.
+
+All of the aforementioned struggles just added up and burned my brain. So I decided to write the game from scratch. It went fine. 
+
+Things that I've learned during the project:
+
+  1. append() , extend(), remove()
+  2. :%s/print/return/g or c *chef's kiss*
+  3. if something looks repetitive you should probably do something about it
+  4. if something looks repetitive you should probably do something about it
+  5. def type():
+         print("if something looks repetitive you should probably do something about it")
+  6. for i in range(3):
+         type()
+  7. flowcharts are good, having a whiteboard makes you not only look smarter but also smarter. USE IT!
+
+Apart from the course, I didn't really mess around with Arch btw. I've watched some more videos, read articles and surfed through the wiki. 
+
+My Beelink Mini Me has arrived, for now just waiting for my SSDs.
+
+Today I will do Day 12. 
+
+See you!
