@@ -3,7 +3,7 @@ from art import logo
 from art import vs
 import random
 
-
+"""THERE IS A BUG THAT EATS THE DATA :D NEED TO FIX IT AND MAKE THE GAME LOOK PRETTIER AND WE ARE DONE!"""
 
 # TODO GAME if user guesses correct score += 1 if not game_over = True
     # TODO Print score
