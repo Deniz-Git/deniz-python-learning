@@ -69,3 +69,26 @@ My Beelink Mini Me has arrived, for now just waiting for my SSDs.
 Today I will do Day 12. 
 
 See you!
+
+
+29-09-2025:
+
+I finished Day 14 on Saturday.It was challenging but somehow managed to pull it off. So it was was a game called Higher Lower. You guess Ig followers of random celebrities. If you guess right score goes up and other slot gets picked randomly. 
+
+First version of my code had a bug. So as you start a fresh run every accout that gets picked shouldn't reappear again. That part was easy. But my code was deleting global list file. So fresh runs always started with diminished lists. I took sunday off and on monday it was a easy fix. 
+
+I've watched the lesson to see how Angela tackled the problem. 
+  1. Her way of keeping a variable outside of the loop was very interesting. For some reason when i needed to do that i was putting every other thing one indent deeper instead of just taking that one small thing outside.
+  2. Her checkanswer with 3 parameters was very cool. Unfortunately I'm still not very familiar with multiple parameters. It was a really good learning experience
+  3. She made a function to format the string instead of repeating. Lesson learned.
+  4. My favorite was putting a condition on returns. So it works like another if statement that returns bool. 
+
+My good friend guided me through a VS code install. 
+  1. Showed me how debugging works, stepping over etc. Similarly shown in the course.
+    a. I was using print() for everything before, hahaha. 
+  2. We installed Jupyter Notebook.
+  3. Pyenv on WSL.
+  4. Connecting Vs code to WSL.
+  5. Choosing Python via Pyenv inside VScode
+
+Today I will start Day 15. It is the first Intermediate lesson. 
