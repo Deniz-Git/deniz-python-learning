@@ -73,9 +73,9 @@ See you!
 
 29-09-2025:
 
-I finished Day 14 on Saturday.It was challenging but somehow managed to pull it off. So it was was a game called Higher Lower. You guess Ig followers of random celebrities. If you guess right score goes up and other slot gets picked randomly. 
+I finished Day 14 on Saturday.It was challenging but somehow managed to pull it off. So it was a game called Higher Lower. You guess Ig followers of random celebrities. If you guess right score goes up and other slot gets picked randomly. 
 
-First version of my code had a bug. So as you start a fresh run every accout that gets picked shouldn't reappear again. That part was easy. But my code was deleting global list file. So fresh runs always started with diminished lists. I took sunday off and on monday it was a easy fix. 
+First version of my code had a bug. So as you start a fresh run every accout that gets picked shouldn't reappear again. That part was easy. But my code was deleting global list file. So fresh runs always started with diminished lists. I took sunday off and on monday it was an easy fix. 
 
 I've watched the lesson to see how Angela tackled the problem. 
   1. Her way of keeping a variable outside of the loop was very interesting. For some reason when i needed to do that i was putting every other thing one indent deeper instead of just taking that one small thing outside.
