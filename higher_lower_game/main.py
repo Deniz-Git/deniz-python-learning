@@ -25,22 +25,27 @@ import random
 
 
 
-def random_from_list():
-    x = random.choice(data)
-    data.remove(x)
-    return x
-
 
 
 
 
 
 def play_the_game():
+    temp_list = []
+    
+    temp_list.extend(data)
+
+
     score = 0
     game_over = False
     check_answer = False
 
     while not game_over:
+        def random_from_list():
+            x = random.choice(temp_list)
+            temp_list.remove(x)
+            return x
+
 
 
         if check_answer == False:
@@ -95,16 +100,3 @@ def play_the_game():
 while input("Do you want to play? Type 'y' or 'n': ") == "y":
     print("\n" * 20)
     play_the_game()
-
-
-
-
-
-
-
-
-
-
-
-
-
