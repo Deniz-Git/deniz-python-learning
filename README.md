@@ -92,3 +92,16 @@ My good friend guided me through a VS code install.
   5. Choosing Python via Pyenv inside VScode
 
 Today I will start Day 15. It is the first Intermediate lesson. 
+
+30-09-2025:
+
+First intermediate day was hell.
+
+Things I struggled with:
+
+  1.  Stop creating functions within loops, would you pleasee
+  2.  Need to spend more time with dictionaries and lists. It was very difficult keeping track of stuff being reffered to dealing with multiple functions.
+  3.  Make better use of functions honestly. I had the problem quite easily mapped out in my brain but couldn't translate it to code/functions properly. Run the problem via functions not the other way around.
+  4. Mutable/Immutable that was interesting. So the resources was mutable and didn't need global access. But the money was immutable. Somewhat new concept for me. Need to study this more.
+
+I will start day 16 today: Object Oriented Programming.
