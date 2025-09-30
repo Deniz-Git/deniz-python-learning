@@ -32,7 +32,6 @@ import random
 
 def play_the_game():
     temp_list = []
-    
     temp_list.extend(data)
 
 
