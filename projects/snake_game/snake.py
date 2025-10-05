@@ -41,12 +41,18 @@ class Snake:
     def adam(self):
         """start of the game, creates 3 snakesegments according starting_position tuples"""
         for position in STARTING_POSITION: 
-            new_segment = Turtle("square")
-            new_segment.penup()
-            new_segment.color("white")
-            new_segment.goto(position)
-            self.segments.append(new_segment)
-        
+            self.add_segment(position)
+            
+    def add_segment(self, position):
+        new_segment = Turtle("square")
+        new_segment.penup()
+        new_segment.color("white")
+        new_segment.goto(position)
+        self.segments.append(new_segment)
+
+    def extend(self):
+        self.add_segment(self.segments[-1].position())        
+       
     def move(self):
         """Starts from the bottom of total number of snake segments(picks last - 1) and makes it go to the next one"""
         for seg_num in range(len(self.segments) - 1, 0, -1):

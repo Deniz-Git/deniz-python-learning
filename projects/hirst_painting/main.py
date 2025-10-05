@@ -3,7 +3,10 @@ from turtle import Screen
 import random
 import colorgram
 
-colors = colorgram.extract('image.jpg', 30)
+
+# For files absolute path is required
+colors = colorgram.extract('/home/deniz-victus/deniz-python-learning/projects/hirst_painting/image.jpg', 30)
+
 
 cagri = t.Turtle()
 t.colormode(255)
