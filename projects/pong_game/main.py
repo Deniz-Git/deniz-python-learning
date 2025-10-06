@@ -1,10 +1,30 @@
 from turtle import Turtle, Screen
 from paddle import Paddle
+from ball import Ball
+from wall import Wall
+from scoreboard import Scoreboard
 import time
+import random
+
+
 
 # Globals
+
+    # Padels
 RIGHT_PADDLE_XY = (350, 0)
 LEFT_PADDLE_XY = (-350, 0)
+
+    # Ball
+BALL_START_POS = (0, 0)
+BALL_SPEED_X= -20
+BALL_SPEED_Y= -20
+
+    # Wall
+UPPER_WALL = (0,300)
+LOWER_WALL = (0,-300)
+
+
+
 
 # Screen 
 screen = Screen()
@@ -18,6 +38,22 @@ screen.listen()
 right_paddle = Paddle(RIGHT_PADDLE_XY)
 left_paddle = Paddle(LEFT_PADDLE_XY)
 
+# Creation of ball
+ball = Ball(BALL_START_POS)
+
+#Creation of wall
+upper_wall = Wall(UPPER_WALL)
+lower_wall = Wall(LOWER_WALL)
+
+
+# Scoreboard
+left_scoreboard = Scoreboard()
+left_scoreboard.goto(-150,150)
+left_scoreboard.show_score_l()
+
+right_scoreboard = Scoreboard()
+right_scoreboard.goto = (150,150)
+right_scoreboard.show_score_r()
 
 
 # Inputs / Keybinds
@@ -26,17 +62,34 @@ screen.onkey(right_paddle.downwards,"Down")
 
 screen.onkey(left_paddle.upwards,"w")
 screen.onkey(left_paddle.downwards,"s")
+  
+# screen.onkey(ball.change_direction(BALL_SPEED),"Space")
 
-
+ 
 
 # Main game loop
 games_is_on = True
 
 while games_is_on:
+    time.sleep(0.1)
     screen.update()
+    ball.move(BALL_SPEED_X,BALL_SPEED_Y)
 
+    # Check wall collision
+    if ball.ycor() > 270 or ball.ycor() < -270:
+        BALL_SPEED_Y *= -1
 
+    # Detect collision with right_paddle
+    if ball.distance(right_paddle) < 40 and ball.xcor() > 320 or ball.distance(left_paddle) < 50 and ball.xcor() < -320:
+        BALL_SPEED_X *= -1
 
+    if ball.xcor() > 300 and ball.distance(right_paddle) > 40:
+        scoreboard.right_score_up()
+        # ball.reset()
+    
+    if ball.xcor() < -300 and ball.distance(left_paddle) > 40:
+        scoreboard.left_score_up()
+        # ball.clear()
 
 
 
