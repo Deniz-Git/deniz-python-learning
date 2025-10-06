@@ -48,13 +48,12 @@ lower_wall = Wall(LOWER_WALL)
 
 # Scoreboard
 left_scoreboard = Scoreboard()
-left_scoreboard.goto(-150,150)
-left_scoreboard.show_score_l()
+left_scoreboard.goto(-280,250)
+left_scoreboard.show_score()
 
 right_scoreboard = Scoreboard()
-right_scoreboard.goto = (150,150)
-right_scoreboard.show_score_r()
-
+right_scoreboard.goto(280,250)
+right_scoreboard.show_score()
 
 # Inputs / Keybinds
 screen.onkey(right_paddle.upwards,"Up")
@@ -62,6 +61,8 @@ screen.onkey(right_paddle.downwards,"Down")
 
 screen.onkey(left_paddle.upwards,"w")
 screen.onkey(left_paddle.downwards,"s")
+
+# screen.onkey(ball.reset, "c")
   
 # screen.onkey(ball.change_direction(BALL_SPEED),"Space")
 
@@ -79,17 +80,24 @@ while games_is_on:
     if ball.ycor() > 270 or ball.ycor() < -270:
         BALL_SPEED_Y *= -1
 
-    # Detect collision with right_paddle
+    # Detect collision with paddle
     if ball.distance(right_paddle) < 40 and ball.xcor() > 320 or ball.distance(left_paddle) < 50 and ball.xcor() < -320:
+        BALL_SPEED_X *= -1.2
+
+
+    # Left side scores
+    if ball.xcor() > 390 and ball.distance(right_paddle) > 40:
+        left_scoreboard.nomnom()
+        ball.teleport(0,0,)
         BALL_SPEED_X *= -1
 
-    if ball.xcor() > 300 and ball.distance(right_paddle) > 40:
-        scoreboard.right_score_up()
-        # ball.reset()
-    
-    if ball.xcor() < -300 and ball.distance(left_paddle) > 40:
-        scoreboard.left_score_up()
-        # ball.clear()
+
+    # Right side scores
+    if ball.xcor() < -390 and ball.distance(left_paddle) > 40:
+        right_scoreboard.nomnom()
+        ball.teleport(0,0,)
+        BALL_SPEED_X *= -1
+
 
 
 
