@@ -106,7 +106,7 @@ Things I struggled with:
 
 I will start day 16 today: Object Oriented Programming.
 
-10-06-2025:
+06-10-2025:
 
 So python is multi-paradigm programming language. It supports both procedural programming as well as OOP.
 
@@ -118,4 +118,9 @@ Things I've learned:
   2. Slices
   3. Reading documentation
 
-My brain is a little fried from work and OOP. I'm content with my progression.
+My brain is a little fried from work and OOP. I'm content with my progression. 
+
+07.10.2025:
+
+Almost lost my pong_game project because I forgot to push. Thankfully I'm working on two different pcs, other one had the good files. phew...
+
