@@ -1,13 +1,7 @@
-
-            
-
-    
-
-
-
-
 from turtle import Turtle
 import random
+
+LEVELS = [(350,10000),(350,10000),(350,9000),(350,8000),(350,7000),(350,6000),(350,5000),(350,4000),(350,3000),(350,2000),(350,1000)]
 
 
 color_list = [
@@ -19,7 +13,6 @@ color_list = [
     (226, 177, 166)
     ]
 
-
 class CarManager():
 
     def __init__(self):
@@ -29,11 +22,11 @@ class CarManager():
     
     #TODO SPAWN CAR RANDOMIZE THEIR POSITION FIXED X BUT RANDOM Y BETWEEN 290 - 290
     #TODO CAR SPECS HERE 
-    def car(self,speed,difficulty):
+    def car(self,animspeed,level):
         random_y = random.choice(range(-270,300))
-        random_x = random.choice(range(300, difficulty)) 
+        random_x = random.choice(LEVELS[level]) 
         new_car = Turtle("square")
-        new_car.speed(speed)
+        new_car.speed(animspeed)
         new_car.color(random.choice(color_list))
         new_car.penup()
         # new_car.shape("square")
@@ -41,12 +34,24 @@ class CarManager():
         new_car.goto(random_x,random_y) #spawn
         self.car_list.append(new_car)
 
-    def spawn_cars(self,speed,number,difficulty):
+    def spawn_cars(self,animspeed,number,level):
         for i in range(number):
-            self.car(speed,difficulty)
+            self.car(animspeed,level)
     
-    def move_cars(self,speed):
+    def move_cars(self,posspeed):
         for car in self.car_list:
-            car.backward(speed)
+            car.backward(posspeed)
+
+    def clearcars(self):
+        for everycar in self.car_list:
+            everycar.hideturtle()
+    
+    def check_for_collision(self,playerobjpos):
+        for everycar in self.car_list:
+            if everycar.distance(playerobjpos) < 30:
+                return True
+
+
+
 
     
