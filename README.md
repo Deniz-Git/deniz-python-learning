@@ -105,3 +105,17 @@ Things I struggled with:
   4. Mutable/Immutable that was interesting. So the resources was mutable and didn't need global access. But the money was immutable. Somewhat new concept for me. Need to study this more.
 
 I will start day 16 today: Object Oriented Programming.
+
+10-06-2025:
+
+So python is multi-paradigm programming language. It supports both procedural programming as well as OOP.
+
+Up until the OOP lessons I've been doing procedural programming. From my understanding it takes instructions and goes step by step. Isn't OOP also step by step. I'm a little confused on this. There is more to it that I need to study. 
+
+Things I've learned:
+
+  1. Inheritance
+  2. Slices
+  3. Reading documentation
+
+My brain is a little fried from work and OOP. I'm content with my progression.
