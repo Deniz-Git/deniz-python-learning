@@ -124,3 +124,6 @@ My brain is a little fried from work and OOP. I'm content with my progression.
 
 Almost lost my pong_game project because I forgot to push. Thankfully I'm working on two different pcs, other one had the good files. phew...
 
+15/10/2025:
+
+Made more games using mainly OOB. I've been learning and playing around with CSV and pandas. 
