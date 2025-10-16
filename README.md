@@ -128,11 +128,7 @@ Almost lost my pong_game project because I forgot to push. Thankfully I'm workin
 
 Made more games using mainly OOB. I've been learning and playing around with CSV and pandas. 
 
-<<<<<<< HEAD
-test.
-=======
 
 16/10/2025
 
 Day 27 Completed. Learning tkinter, soon will be able to make my applications.
->>>>>>> 4c3c19f (Updated my journal 16/10/2025)
