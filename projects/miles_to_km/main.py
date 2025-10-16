@@ -13,7 +13,6 @@ def calculation():
     label_1_1.config(text=round(km,2))
 
 
-
 #Labels
 
 #first row labels

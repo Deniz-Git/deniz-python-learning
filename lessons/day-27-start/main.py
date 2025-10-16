@@ -34,4 +34,3 @@ input = Entry(width=10)
 input.grid(column=3,row=2)
 
 window.mainloop()
-
