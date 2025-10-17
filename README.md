@@ -132,3 +132,7 @@ Made more games using mainly OOB. I've been learning and playing around with CSV
 16/10/2025
 
 Day 27 Completed. Learning tkinter, soon will be able to make my applications.
+
+17/10/2025
+
+Day 28 Completed. Created a Pomodoro app. Learning more tkinter stuff.
