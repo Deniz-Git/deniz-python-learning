@@ -74,8 +74,8 @@ def count_down(count):
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
-window.title("Pomodoro")
-window.config(padx=100, pady=50, bg=YELLOW)
+window.title("Password Manager")
+window.config(padx=20, pady=20)
 
 
 
