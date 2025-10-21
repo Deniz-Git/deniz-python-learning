@@ -7,7 +7,7 @@ FONT = ("Courier", 8, "normal")
 
 screen = turtle.Screen()
 screen.title("U.S. States Game")
-image = "blank_states_img.gif"
+image = "/home/deniz/deniz-python-learning/projects/us_states_game/blank_states_img.gif"
 screen.addshape(image)
 turtle.shape(image)
 
